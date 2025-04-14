@@ -1,0 +1,56 @@
+:root {
+    --main-color: #0a0133;
+    --box-text-color: rgb(185, 186, 201);
+}
+
+nav {
+    background-color: var(--main-color);
+    padding: 10px;
+}
+
+nav a {
+    color: var(--box-text-color);
+    display: block;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--main-color);
+}
+
+main img {
+    width: 135px;
+    height: auto;
+    border: 1px solid rgb(36, 25, 48);
+    padding: 2px;
+    box-shadow: 0 0 20px rgb(37, 37, 37);
+}
+
+p { padding: 0;}
+
+main {
+    margin: 1.6rem;
+    max-width: 850px;
+}
+
+aside {
+    width: 30rem;
+    margin: 1.6rem;
+    border: 2px solid #4d70b9;
+    padding: 1rem;
+    background-color: var(--main-color);
+    color: var(--box-text-color);
+    text-align: center;
+}
+
+aside img {
+    width: 180px;
+    height: auto;
+    box-shadow: 0 0 30px #ACACAC;
+}
+
+footer{
+    margin-top: 20px;
+    border-top: 1px dotted var(--main-color);
+    text-align: center;
+}
