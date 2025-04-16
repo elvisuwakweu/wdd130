@@ -3,24 +3,32 @@
 }
 
 :root {
-  --primary-color: #020202;
+  --primary-color: #000000;
   --secondary-color: #10009c;
   --accent1-color: #4F5669;
-  --accent2-color: #66717E;
+  --accent2-color: #ffffff;
   --neutral-color: #9A9A9A;
   --highlight-color: #E0A458;
   --cta-color: #240358;
 }
 
-html {
-  max-width: 750px;
-  margin: 2px auto;
+header,
+main,
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-h1,h2 {
-  color: var(--primary-color);
+h1,
+h2 {
+  color: white;
   text-align: center;
-  font-size: x-large;
+  padding: 2px;
+  margin: 0rem auto;
+  text-align: center;
+  opacity: 1px;
+  background-color: var(--cta-color);
+
 }
 
 p {
@@ -42,7 +50,7 @@ p {
 }
 
 .social-media-links a img {
-  width: 20px;
+  width: 30px;
 }
 
 .hero {
@@ -55,21 +63,21 @@ p {
   height: auto;
 }
 
-.hero h1{
+.hero h1 {
   position: absolute;
-  top: 2px;
-  width: 200px;
-  padding: 1px;
+  top: 1px;
+  width: 400px;
+  padding: 3px;
   text-align: center;
   opacity: 0.7;
   color: var(--cta-color);
-  background-color: #cf9344cc;
+  background-color: #cec2e2cc;
 }
 
 .hero article {
   background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
-  top: 150px;
+  top: 15Zpx;
 }
 
 .hero article img {
@@ -79,7 +87,7 @@ p {
 }
 
 .hero p {
-  color: rgb(138, 129, 115);
+  color: rgb(0, 0, 0);
 }
 
 .hero h3 {
@@ -109,27 +117,31 @@ p {
 
 header {
   display: grid;
-  grid-template-columns: 100px 1fr;
+  grid-template-columns: 200px 1fr;
   margin: 0rem auto;
+  align-items: center;
   background-color: var(--cta-color);
 }
 
 header nav {
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  margin: 5px;
   align-items: center;
 }
 
 header nav a {
+  font-size: 1.3rem;
   color: var(--primary-color);
-  background-color: rgb(92, 76, 236);
-  border: 1px solid #110050;
-  padding: 0.1rem 15px;
+  background-color: rgb(136, 124, 245);
+  border: 1px solid #000000;
+  padding: 1.0rem;
+  width: auto;
+  margin: 2px;
   text-decoration: none;
 }
 
 header nav a:hover {
-  font-size: 1.1rem;
   color: var(--accent2-color);
   text-decoration: underline;
 }
@@ -181,13 +193,13 @@ figcaption {
 
 footer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   background-color: var(--cta-color);
   padding: 2.1rem 0;
 }
 
 footer p {
-  font-size: large;
+  font-size: x-large;
   margin-right: 2rem;
   color: white;
 }
