@@ -14,20 +14,21 @@
 
 header,
 main,
-footer {
+footer
+ {
   max-width: 1200px;
   margin: 0 auto;
 }
 
 h1,
 h2 {
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 2px;
   margin: 0rem auto;
   text-align: center;
   opacity: 1;
-  background-color: var(--cta-color);
+  background-color: #cec2e2cc;
 
 }
 
@@ -58,27 +59,25 @@ p {
 }
 
 .hero img {
-  display: block;
-  width: 1200px;
-  max-width: 0 auto;
-  height: auto;
+  width: 100%;
+  margin: 0 auto
 }
 
 .hero h1 {
   position: absolute;
-  top: 1px;
-  width: 400px;
-  padding: 3px;
+  top: 20px;
+  width: 1200px;
+  padding: 0px;
   text-align: center;
-  opacity: 0.7;
-  color: var(--cta-color);
+  opacity: 0.8;
+  color: #000000;
   background-color: #cec2e2cc;
 }
 
 .hero article {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(80, 65, 121, 0.4);
   position: absolute;
-  top: 15px;
+  top: 250px;
 }
 
 .hero article img {
@@ -88,7 +87,7 @@ p {
 }
 
 .hero p {
-  color: rgb(0, 0, 0);
+  color: var(--primary-color);
 }
 
 .hero h3 {
@@ -138,7 +137,7 @@ header nav a {
   border: 1px solid #000000;
   padding: 1.0rem;
   width: auto;
-  margin: 2px;
+  margin: 1px;
   text-decoration: none;
 }
 
@@ -148,24 +147,22 @@ header nav a:hover {
 }
 
 .history-section {
-  display: flex;
-  justify-content: space-evenly;
+  padding: 0rem;
+  background-color: #ffffff;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+   border: 1px solid #000000;
+  margin: 0px;
+}
+
+.history-section h2 {
+  font-size: 1.7rem;
+  margin-bottom: 0rem;
 }
 
 .history-section p {
-  margin: 0;
-}
-
-.history-section img {
-  width: 150px;
-  height: auto;
-  box-shadow: 0 0 30px gray;
-  margin: 0 10px;
-}
-
-.history {
-  border: 1px solid #000;
-  margin: 10px 0;
+  margin-bottom: 1rem;
+  line-height: 1.5;
 }
 
 .adventure-section {
@@ -190,6 +187,7 @@ figure img {
 
 figcaption {
   font-size: larger;
+  color: rgb(0, 0, 0);
 }
 
 footer {
@@ -232,7 +230,7 @@ fieldset {
   gap: 0.5rem;
   margin: 1rem;
   padding: 1rem;
-  border: 1px solid #333;
+  border: 1px solid #000000;
 }
 
 legend {
