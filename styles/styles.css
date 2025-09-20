@@ -10,7 +10,7 @@
 --nav-link: #2432f1;
 --box-bg: #03065f;
 --box-border: #2d2f31;
---box-text: #64676e;
+--box-text: #5b5d61;
 } 
 
 * {
@@ -71,7 +71,6 @@ main img {
 
 p { 
   padding: 1rem;
-  color: var(--text-color);
 }
 
 aside {
@@ -98,8 +97,6 @@ aside h2 {
 }
 
 footer {
-  border-top: 2px solid var(--nav-link);
-  text-align: center;
   background-color: var(--box-bg);
   color: var(--main-color);
 }
