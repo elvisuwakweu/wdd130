@@ -1,53 +1,88 @@
-nav {
-    background-color: rgb(6, 6, 87);
-    padding: 10px;
+:root {
+--main-color: #ffffff;             /* Facebook blue */
+--accent-color: #f0f2f5;        /* Facebook light background */
+--text-color: #050505;          /* Facebook dark text */
+--secondary-color: #e7f3ff;     /* Facebook secondary blue */
+--border-color: #2d2f31;
+--footer-bg: #03065f;
+--footer-text: #ffffff;
+--nav-bg: #03065f;
+--nav-link: #2432f1;
+--box-bg: #03065f;
+--box-border: #2d2f31;
+--box-text: #64676e;
+} 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav a {
-    color: white;
-    padding: 15px;
-    display: block;
+a {
+  color: var(--nav-bg)
+}
+
+header,
+.grid,
+footer {
+  max-width: 1300px;
+  margin: 0px auto;
 }
 
 main {
   max-width: 840px;
+  grid-column: 2/3;
+  margin: 1rem 0;
+  color: var(--text-color);
+}
+
+nav {
+  background-color: var(--nav-bg);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+nav a {
+  color: var(--accent-color);
+  padding: 0.5rem;
+  display: block;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h1 {
+  border-bottom: 2px solid var(--box-bg);
+  color: var(--nav-bg);
 }
 
 main img {
   width: 150px;
   height: auto;
-  border: 1px solid rgb(6, 6, 87);
-  padding: 0;
-  box-shadow: 0 0 20px grey;
+  float: right;
+  border: 1px solid var(--border-color);
+  padding: 2px;
+  box-shadow: 0 0 30px gray;
+  margin: 1rem 0 1rem 1rem;
 }
 
-h1 {
-    color: rgb(6, 6, 87);
-    width: 100%;
-    white-space: nowrap;
-}
-
-img {
-    width: 150px;
-    height: auto;
-    border: 1px solid white;
-    padding: 0;
-    box-shadow:0 0 30px grey;
-}
-
-p {
-    padding: 0;
+p { 
+  padding: 1rem;
+  color: var(--text-color);
 }
 
 aside {
-  width: 20rem;
+  position: relative;
+  max-width: 50rem;
   margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 0.2); /* 1️⃣ */
+  border: 1px solid var(--border-color);
   padding: 1rem;
   background-color: #eee;
   color: #333;
   text-align: center;
-  padding: 0;
 }
 
 aside img {
@@ -55,8 +90,31 @@ aside img {
   height: auto;
 }
 
+aside h2 {
+  position: absolute;
+  top: 30px;
+  left: 335px;
+  color: var(--box-text);
+}
+
 footer {
-    margin-top: 1em;
-    border-top: 1px solid #000;
-    text-align: center;
+  border-top: 2px solid var(--nav-link);
+  text-align: center;
+  background-color: var(--box-bg);
+  color: var(--main-color);
+}
+
+ul {
+  list-style: none;
+  padding: 1rem;
+}
+
+/* Class Selectors */
+
+.box {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px rgb(112, 108, 135);
+  color: var(--text-color);
+  background-color: var(--accent-color);
 }
