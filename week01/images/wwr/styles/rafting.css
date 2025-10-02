@@ -1,0 +1,332 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans&display=swap');
+
+:root {
+  --primary-color: #184e77;        /* Deep Blue */
+  --secondary-color: #83c5be;      /* Light Teal */
+  --accent1-color: #003366;        /* Navy Blue */
+  --accent2-color: #f9f9f9;        /* Light Gray */
+  --heading-font: "Lato", sans-serif;
+  --body-font: "Nunito Sans", sans-serif;
+}
+
+/* Reset Box Model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: var(--accent2-color);
+  line-height: 1.6;
+}
+
+/* Page Layout */
+header,
+main,
+footer {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Typography */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* NAVIGATION */
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--accent1-color);
+  color: white;
+}
+
+header img {
+  height: 60px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h2 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: var(--accent1-color);
+  color: white;
+  opacity: 0.9;
+  padding: 0.5rem 0;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 1rem;
+  max-width: 700px;
+  box-shadow: 0 0 10px gray;
+  font-size: 1rem;
+}
+
+.hero article img {
+  float: right;
+  width: 100px;
+  margin-left: 1rem;
+  box-shadow: 0 0 5px gray;
+}
+
+/* HISTORY SECTION */
+.history {
+  padding: 1rem 0;
+}
+
+.history p {
+  margin-bottom: 1rem;
+}
+
+/* ADVENTURES SECTION */
+.adventures {
+  padding: 1rem 0;
+}
+
+.adventures .gallery {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 1rem 0;
+}
+
+.adventures figure {
+  flex: 0 0 auto;
+  width: 160px;
+  text-align: center;
+}
+
+.adventures figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.adventures figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer .socialmedia {
+  display: flex;
+  gap: 1rem;
+}
+
+footer .socialmedia img {
+  width: 30px;
+  height: auto;
+}
+
+/* CONTACT PAGE SECTIONS */
+.contact-info,
+.team,
+.contact-form {
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 1rem;
+}
+
+/* TEAM SECTION */
+.team {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team .employee img {
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* FORM STYLES */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: var(--body-font);
+}
+
+.contact-form textarea {
+  min-height: 100px;
+}
+
+.contact-form button {
+  background-color: #0066cc;
+  color: white;
+  padding: 0.7rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #004c99;
+}
+/* trip and home*/
+  header{ 
+    margin: 2rem auto;
+  max-width: 800px;
+  padding: 1rem;
+  }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  background: #004d66;
+  color: blue;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  padding: 0.5rem;
+}
+
+.btn {
+  background: orange;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.newsletter {
+  padding: 2rem;
+  background: #eee;
+  text-align: center;
+}
+
+.cta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.trips-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.trips-grid img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  background: #004d66;
+  color: blue;
+  padding: 1rem;
+}
