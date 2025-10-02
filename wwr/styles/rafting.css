@@ -61,7 +61,7 @@ header nav ul {
   display: flex;
   gap: 1rem;
   justify-content: flex-end;
-  padding: 1ram ;
+  padding: 1rem ;
   margin: 0px;
 }
 
@@ -79,12 +79,6 @@ header h1 {
 .hero {
   position: relative;
   margin-bottom: 2rem;
-}
-
-.hero img {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 .hero h2 {
@@ -107,6 +101,12 @@ header h1 {
   max-width: 700px;
   box-shadow: 0 0 10px gray;
   font-size: 1rem;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .hero article img {
@@ -239,7 +239,7 @@ footer .socialmedia img {
   max-width: 800px;
   padding: 1rem;
   }
-  
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
