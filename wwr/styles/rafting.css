@@ -34,7 +34,7 @@ h1 {
 
 h1 {
   position: absolute;
-  top: 32px;
+  top: 50px;
   width: 27rem;
   padding: 16px;
   text-align: center;
@@ -57,22 +57,41 @@ header {
   color: white;
 }
 
+.header-container {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  align-items: center;
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.logo {
+  height: 60px;
+  margin-right: 1rem;
+}
+
+.header-container h1 {
+  font-size: 1.5rem;
+  margin-right: auto;
+}
+
 header img {
   height: 60px;
 }
 
 header nav ul {
   display: flex;
-  width: 41rem;
+  width: 42rem;
   list-style: none;
-  gap: 1rem;
+  gap: 2rem;
   justify-content: flex-end;
-  padding: 0px;
-  margin: 1rem;
+  padding: 1.0px;
+  margin: 0rem;
 }
 
 header nav ul li a {
-  color: white;
+  color: rgb(47, 79, 255);
   text-decoration: none;
   font-weight: bold;
 }
